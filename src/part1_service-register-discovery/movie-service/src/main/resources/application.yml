@@ -4,8 +4,8 @@ server:
 eureka:
   client:
     serviceUrl:
-      #defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
+#      defaultZone: http://localhost:8761/eureka/
   instance:
     prefer-ip-address: true # 优先注册IP地址而不是hostname
   healthcheck:
@@ -16,4 +16,4 @@ spring:
     name: movie-service
 
 userservice:
-  url: http://10.248.63.109:8000/
+  url: http://localhost:8000/

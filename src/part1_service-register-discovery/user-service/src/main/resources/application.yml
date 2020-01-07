@@ -23,9 +23,10 @@ spring:
     platform: h2
     schema: classpath:db/schema.sql
     data: classpath:db/data.sql
-    username: sa
-    url: jdbc:h2:mem:test
-    driver-class-name: org.h2.Driver
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/world?characterEncodingncoding=UTF-8&serverTimezone=UTC&zeroDateTimeBehavior=convertToNull&noAccessToProcedureBodies=true
+    username: root
+    password: 123456
   h2:
     console:
       path: /h2-console
